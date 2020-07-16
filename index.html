@@ -1,0 +1,714 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/jquery.formstyler.css">
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+  <!-- <header class="header">
+    <div class="header_top">
+      <div class="container">
+        <div class="header_top_inner">
+          <nav class="top_menu">
+            <ul class="top_menu_list">
+              <li class="top_menu_item"><a href="#" class="top_menu_link">О компании</a></li>
+              <li class="top_menu_item"><a href="#" class="top_menu_link">Доставка и оплата</a></li>
+              <li class="top_menu_item"><a href="#" class="top_menu_link">Гарантия и возврат</a></li>
+              <li class="top_menu_item"><a href="#" class="top_menu_link">Сотрудничество</a></li>
+              <li class="top_menu_item"><a href="#" class="top_menu_link">Контакты</a></li>
+            </ul>
+          </nav>
+          <div class="header_top_address">
+            <div class="header_shops">
+              <div data-shops-select class="header_shops_inner">
+                <div data-shops-title class="shops_title">Магазины</div>
+                <div class="shops_dropdown hidden">
+                  <div data-shops-item='Магазин 1' class="shops_dropdown_item">Магазин 1</div>
+                  <div data-shops-item='Магазин 2' class="shops_dropdown_item">Магазин 2</div>
+                  <div data-shops-item='Магазин 3' class="shops_dropdown_item">Магазин 3</div>
+                  <div data-shops-item='Магазин 4' class="shops_dropdown_item">Магазин 4</div>
+                  <div data-shops-item='Магазин 5' class="shops_dropdown_item">Магазин 5</div>
+                </div>
+              </div>
+              <select class="header_top_select hidden">
+                <option value="none">Магазины</option>
+                <option value="Магазин 1">Магазин 1</option>
+                <option value="Магазин 2">Магазин 2</option>
+                <option value="Магазин 3">Магазин 3</option>
+                <option value="Магазин 4">Магазин 4</option>
+                <option value="Магазин 5">Магазин 5</option>
+              </select>
+            </div>
+            <div class="header_top_cities">
+              <span>Ваш город:</span>
+              <select class='select_cities' name="" id="">
+                <option value="Kazan">Казань</option>
+                <option value="Kazan">Казань</option>
+                <option value="Kazan">Казань</option>
+                <option value="Kazan">Казань</option>
+                <option value="Kazan">Казань</option>
+              </select>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="header_content">
+      <div class="container">
+        <div class="header_content_inner">
+          <div class="logo">
+            <img src="images/logo.svg" alt="">
+          </div>
+          <div class="header_content_phones">
+            <div class="phone_items">
+              <div class="phone_item">
+
+                <a class="phone_item_link" href="tel:88432111999">8 (843) 211-19-99</a>
+
+                <div class="phone_item_text">Казань</div>
+              </div>
+              <div class="phone_item">
+                <a class="phone_item_link" href="tel:88002111999">8 (800) 211-19-99</a>
+                <div class="phone_item_text">Россия</div>
+              </div>
+            </div>
+          </div>
+          <div class="user_panel">
+            <div class="user_panel_item">
+              <button class="header_search">
+                <img src="images/search.svg" alt="">
+              </button>
+            </div>
+            <div class="user_panel_item">
+              <a class="user_panel_link">
+                <img src="images/user.svg" alt="">
+              </a>
+            </div>
+            <div class="user_panel_item">
+              <a class="user_panel_link" href="#"><img src="images/add.svg" alt="">
+              </a>
+              <div class="user_panel_num">
+                2
+              </div>
+            </div>
+            <div class="user_panel_item">
+              <a class="user_panel_link" href="#"><img src="images/cart.svg" alt=""></a>
+              <div class="user_panel_num">2</div>
+              <div class="user_panel_count">880 <span>руб.</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="header_bottom">
+      <div class="container">
+        <div class="header_bottom_inner">
+          <a class="header_bottom_categories" href="#">
+            Каталог косметики
+          </a>
+          <div class="bottom_menu">
+            <ul class="bottom_menu_list">
+              <li class="bottom_menu_item"><a href="#" class="bottom_menu_link bottom_menu_link_active">Бумажные
+                  изделия</a></li>
+              <li class="bottom_menu_item"><a href="#" class="bottom_menu_link">Популярные товары</a></li>
+              <li class="bottom_menu_item"><a href="#" class="bottom_menu_link">Распродажа</a></li>
+              <li class="bottom_menu_item"><a href="#" class="bottom_menu_link">Акции</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <section class="general">
+    <div class="container">
+      <div class="general_inner">
+        <ul class="breadcrumbs">
+          <li class="breadcrumbs_item"><a href="#" class="breadcrumbs_link">Главная</a></li>
+          <li class="breadcrumbs_item">Бумажные изделия</li>
+        </ul>
+        <h1 class="general_title title">
+          Бумажные изделия
+        </h1>
+        <div class="general_info">
+          <div class="general_info_items">
+            <div class="general_info_item">
+              <div class="general_info_item_num">
+                3,4 <span>тысяч<br>тонн</span>
+              </div>
+              <div class="general_info_item_descr">
+                Ежедневно производится туалетной бумаги
+              </div>
+            </div>
+            <div class="general_info_item">
+              <div class="general_info_item_num">
+                5<span>компаний<br>доставки</span>
+              </div>
+              <div class="general_info_item_descr">
+                Сотрудничают с нами
+              </div>
+            </div>
+            <div class="general_info_item">
+              <div class="general_info_item_num">
+                20<span>крупных<br>компаний</span>
+              </div>
+              <div class="general_info_item_descr">
+                Доверяют нам
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section> -->
+  <section class="benefits">
+    <div class="container">
+      <h3 class="title benefits_title">
+        Наши преимущества
+      </h3>
+      <div class="benefits_items">
+        <div class="benefits_item">
+          <img src="images/item_1.svg" alt="" class="benefits_img">
+          <h4 class="benefits_item_title">Собственное производство</h4>
+          <div class="benefits_item_text">Самостоятельно производим и контролируем качество готового продукта.</div>
+        </div>
+        <div class="benefits_item">
+          <img src="images/item_2.svg" alt="" class="benefits_img">
+          <h4 class="benefits_item_title">Соответствие техническим нормам</h4>
+          <div class="benefits_item_text">Бумага изготавливается по ГОСТ Р 52354-2005.</div>
+        </div>
+        <div class="benefits_item">
+          <img src="images/item_3.svg" alt="" class="benefits_img">
+          <h4 class="benefits_item_title">Брендирование бумаги</h4>
+          <div class="benefits_item_text">На готовом продукте создается логотип или символ, которые помогут сформировать
+            позитивный имидж компании.</div>
+        </div>
+        <div class="benefits_item">
+          <img src="images/item_4.svg" alt="" class="benefits_img">
+          <h4 class="benefits_item_title">Безопасный продукт</h4>
+          <div class="benefits_item_text">В производстве не используется макулатура с типографской краской, в составе
+            который есть свинец, негативно влияющий на здоровье.</div>
+        </div>
+        <div class="benefits_item">
+          <img src="images/item_5.svg" alt="" class="benefits_img">
+          <h4 class="benefits_item_title">С заботой об экологии</h4>
+          <div class="benefits_item_text">Продукт изготавливается из вторичного сырья, которое помогает сохранить
+            древесные леса целыми.</div>
+        </div>
+        <div class="benefits_item">
+          <img src="images/item_6.svg" alt="" class="benefits_img">
+          <h4 class="benefits_item_title">Помогаем экономить</h4>
+          <div class="benefits_item_text">Создавая бумагу на собственном производстве, мы избегаем дополнительных трат
+            на
+            поставщиков и доставку готового продукта, что благоприятно влияет на ценообразование.</div>
+        </div>
+      </div>
+      <div class="benefits_slider">
+        <div class="benefits_slider_item">
+          <img src="images/item_1.svg" alt="" class="benefits_slider_img">
+          <h4 class="benefits_slider_item_title">Собственное производство</h4>
+          <div class="benefits_slider_item_text">Самостоятельно производим и контролируем качество готового продукта.</div>
+        </div>
+        <div class="benefits_slider_item">
+          <img src="images/item_2.svg" alt="" class="benefits_slider_img">
+          <h4 class="benefits_slider_item_title">Соответствие техническим нормам</h4>
+          <div class="benefits_slider_item_text">Бумага изготавливается по ГОСТ Р 52354-2005.</div>
+        </div>
+        <div class="benefits_slider_item">
+          <img src="images/item_3.svg" alt="" class="benefits_slider_img">
+          <h4 class="benefits_slider_item_title">Брендирование бумаги</h4>
+          <div class="benefits_slider_item_text">На готовом продукте создается логотип или символ, которые помогут сформировать
+            позитивный имидж компании.</div>
+        </div>
+        <div class="benefits_slider_item">
+          <img src="images/item_4.svg" alt="" class="benefits_slider_img">
+          <h4 class="benefits_slider_item_title">Безопасный продукт</h4>
+          <div class="benefits_slider_item_text">В производстве не используется макулатура с типографской краской, в составе
+            который есть свинец, негативно влияющий на здоровье.</div>
+        </div>
+        <div class="benefits_slider_item">
+          <img src="images/item_5.svg" alt="" class="benefits_slider_img">
+          <h4 class="benefits_slider_item_title">С заботой об экологии</h4>
+          <div class="benefits_slider_item_text">Продукт изготавливается из вторичного сырья, которое помогает сохранить
+            древесные леса целыми.</div>
+        </div>
+        <div class="benefits_slider_item">
+          <img src="images/item_6.svg" alt="" class="benefits_slider_img">
+          <h4 class="benefits_slider_item_title">Помогаем экономить</h4>
+          <div class="benefits_slider_item_text">Создавая бумагу на собственном производстве, мы избегаем дополнительных трат
+            на
+            поставщиков и доставку готового продукта, что благоприятно влияет на ценообразование.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- <section class="product">
+    <div class="container">
+      <h3 class="title product_title">Наш продукт</h3>
+      <p class="product_description">
+        Создаем продукт, который комфортно использовать. Плотность бумаги составляет 28-34 г/м2, что позволяет добиться
+        идеального соотношения мягкости и жесткости. Высокая плотность не является причиной засорения трубопровода. Наша
+        бумага полностью растворяется в канализации.
+      </p>
+      <div class="product_subtext">
+        Изготавливаем бумагу в 2-х форматах:
+      </div>
+      <div class="product_items">
+        <div class="product_item_1">
+          <img src="images/paper_1.png" alt="" class="product_item_img_1">
+          <div class="product_item_info">
+            <div class="product_item_unit">
+              <div class="product_item_text">Диаметр рулона</div>
+              <div class="product_item_value">185 мм</div>
+            </div>
+            <div class="product_item_unit">
+              <div class="product_item_text">Ширина</div>
+              <div class="product_item_value">85 мм</div>
+            </div>
+            <div class="product_item_unit">
+              <div class="product_item_text">Длина намотанной бумаги</div>
+              <div class="product_item_value">150 м</div>
+            </div>
+            <div class="product_item_unit">
+              <div class="product_item_text">Вес</div>
+              <div class="product_item_value">340 гр.</div>
+            </div>
+            <button class="product_item_btn button">сделать заказ</button>
+          </div>
+        </div>
+        <div class="product_item_2">
+          <div class="product_item_info">
+            <div class="product_item_unit">
+              <div class="product_item_text">Диаметр рулона</div>
+              <div class="product_item_value">185 мм</div>
+            </div>
+            <div class="product_item_unit">
+              <div class="product_item_text">Ширина</div>
+              <div class="product_item_value">85 мм</div>
+            </div>
+            <div class="product_item_unit">
+              <div class="product_item_text">Длина намотанной бумаги</div>
+              <div class="product_item_value">200 м</div>
+            </div>
+            <div class="product_item_unit">
+              <div class="product_item_text">Вес</div>
+              <div class="product_item_value">440 гр.</div>
+            </div>
+            <button class="product_item_btn button">сделать заказ</button>
+          </div>
+          <img src="images/paper_2.png" alt="" class="product_item_img_2">
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="create">
+    <div class="container">
+      <h3 class="title create_title">Как создается бумага</h3>
+      <div class="create_description">
+        Производство туалетной бумаги проходит в несколько этапов:
+      </div>
+      <div class="create_items">
+        <div class="create_item">
+          <div class="create_item_num ">1</div>
+          <div class="create_item_text">Сырье и вода смешиваются до образования однородной массы и отправляются в
+            бумагоделательную машину — станок, где происходит формирование бумажного полотна.</div>
+        </div>
+        <div class="create_item">
+          <div class="create_item_num">2</div>
+          <div class="create_item_text">Одновременно подготавливается основа для рулонов — картонная втулка диаметром 65
+            мм. Для этого используется клей, способный скрепить картон и придать ему нужную форму.</div>
+        </div>
+        <div class="create_item">
+          <div class="create_item_num">3</div>
+          <div class="create_item_text">С помощью специальной аппаратуры готовое бумажное полотно плотно наматывается на
+            втулку.
+          </div>
+        </div>
+        <div class="create_item">
+          <div class="create_item_num">4</div>
+          <div class="create_item_text">Изначально готовится большая заготовка, из которой впоследствии создаются рулоны
+            нужного формата. Нарезку производит ленточнопильный станок.</div>
+        </div>
+        <div class="create_item">
+          <div class="create_item_num">5</div>
+          <div class="create_item_text">Готовые порционные рулоны отправляются на упаковочную линию, где с помощью
+            механического и ручного труда укладываются в упаковки по 12 штук.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="about">
+    <div class="container">
+      <div class="about_inner">
+        <img src="images/about.jpg" alt="" class="about_img">
+        <div class="about_info">
+          <h3 class="title about_info_title">
+            Группа компаний “МЕДАР”
+          </h3>
+          <p class="about_info_text">
+            Компания “MEDAR BEAUTY” изготавливает туалетную бумагу из переработанной макулатуры 5 марок: МС–1А, МС–2А,
+            МС–7Б, МС–8В, МС–13В, соответствующей всем стандартам ГОСТ 10700-89.
+          </p>
+          <p class="about_info_text">
+            Вторичное сырье перед использованием в производстве проходит тщательную очистку от печатной краски,
+            наполнителей и различных примесей. После очищения проводится антисептическая обработка, которая
+            обеззараживает
+            бумагу и делает ее абсолютно безопасной для здоровья. Из вторичного сырья получается бумага серого или
+            светло-серого цвета.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="delivery">
+    <div class="container">
+      <div class="delivery_inner">
+        <h3 class="title delivery_title">
+          Условия доставки
+        </h3>
+        <div class="delivery_description">
+          Мы доставляем заказы по всем регионам России. Способ доставки подбирается, исходя из предпочтений клиента. Мы
+          работаем с 5-ю транспортными компаниями:
+        </div>
+        <div class="delivery_transport">
+          <div class="delivery_items">
+            <div class="delivery_item">
+              <img src="images/delivery-1.svg" alt="" class="delivery_img">
+              <div class="delivery_item_title">Самовывоз</div>
+              <div class="delivery_item_time">Сегодня</div>
+              <div class="delivery_item_cost">Бесплатно</div>
+            </div>
+            <div class="delivery_item">
+              <img src="images/delivery-2.svg" alt="" class="delivery_img">
+              <div class="delivery_item_title">Доставка по
+                городу</div>
+              <div class="delivery_item_time">Завтра</div>
+              <div class="delivery_item_cost">200 руб.</div>
+            </div>
+            <div class="delivery_item">
+              <img src="images/delivery-3.svg" alt="" class="delivery_img">
+              <div class="delivery_item_title">В пределах<br>
+                Казани<br>
+                (+100 км)</div>
+              <div class="delivery_item_time">2-4 дня</div>
+              <div class="delivery_item_cost">200 руб.</div>
+            </div>
+            <div class="delivery_item">
+              <img src="images/delivery-4.png" alt="" class="delivery_img">
+              <div class="delivery_item_title">ПЭК</div>
+              <div class="delivery_item_time">7-14 дней</div>
+              <div class="delivery_item_cost">450 руб.</div>
+            </div>
+            <div class="delivery_item">
+              <img src="images/delivery-5.png" alt="" class="delivery_img">
+              <div class="delivery_item_title">Энергия</div>
+              <div class="delivery_item_time">3-8 дней</div>
+              <div class="delivery_item_cost">350 руб.</div>
+            </div>
+            <div class="delivery_item">
+              <img src="images/delivery-6.jpg" alt="" class="delivery_img">
+              <div class="delivery_item_title">Кит</div>
+              <div class="delivery_item_time">12-20 дней</div>
+              <div class="delivery_item_cost">200 руб.</div>
+            </div>
+            <div class="delivery_item">
+              <img src="images/delivery-7.png" alt="" class="delivery_img">
+              <div class="delivery_item_title">Деловые<br> линии</div>
+              <div class="delivery_item_time">5-10 дней</div>
+              <div class="delivery_item_cost">150 руб.</div>
+            </div>
+            <div class="delivery_item">
+              <img src="images/delivery-8.png" alt="" class="delivery_img">
+              <div class="delivery_item_title">Норд Вил</div>
+              <div class="delivery_item_time">5-10 дней</div>
+              <div class="delivery_item_cost">150 руб.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="clients">
+    <div class="container">
+      <h3 class="clients_title title">
+        У нас покупают
+      </h3>
+      <div class="clients_description">
+        Нашими постоянными клиентами являются крупные казанские торговые центры и кинотеатры: “Киномакс”, “Горки парк”,
+        “Тандем”, “Олимп”, “Парк Хаус”, “Южный” и “Мегастрой”.
+      </div>
+      <div class="clients_slider">
+        <div class="clients_slider_item"><img src="images/slide_1.png" alt="" class="clients_slider_img"></div>
+        <div class="clients_slider_item"><img src="images/slide_2.png" alt="" class="clients_slider_img"></div>
+        <div class="clients_slider_item"><img src="images/slide_3.png" alt="" class="clients_slider_img"></div>
+        <div class="clients_slider_item"><img src="images/slide_4.png" alt="" class="clients_slider_img"></div>
+        <div class="clients_slider_item"><img src="images/slide_5.png" alt="" class="clients_slider_img"></div>
+        <div class="clients_slider_item"><img src="images/slide_1.png" alt="" class="clients_slider_img"></div>
+        <div class="clients_slider_item"><img src="images/slide_2.png" alt="" class="clients_slider_img"></div>
+        <div class="clients_slider_item"><img src="images/slide_3.png" alt="" class="clients_slider_img"></div>
+        <div class="clients_slider_item"><img src="images/slide_4.png" alt="" class="clients_slider_img"></div>
+        <div class="clients_slider_item"><img src="images/slide_5.png" alt="" class="clients_slider_img"></div>
+        <div class="clients_slider_item"><img src="images/slide_1.png" alt="" class="clients_slider_img"></div>
+        <div class="clients_slider_item"><img src="images/slide_2.png" alt="" class="clients_slider_img"></div>
+        <div class="clients_slider_item"><img src="images/slide_3.png" alt="" class="clients_slider_img"></div>
+        <div class="clients_slider_item"><img src="images/slide_4.png" alt="" class="clients_slider_img"></div>
+        <div class="clients_slider_item"><img src="images/slide_5.png" alt="" class="clients_slider_img"></div>
+        <div class="clients_slider_item"><img src="images/slide_1.png" alt="" class="clients_slider_img"></div>
+        <div class="clients_slider_item"><img src="images/slide_2.png" alt="" class="clients_slider_img"></div>
+        <div class="clients_slider_item"><img src="images/slide_3.png" alt="" class="clients_slider_img"></div>
+        <div class="clients_slider_item"><img src="images/slide_4.png" alt="" class="clients_slider_img"></div>
+        <div class="clients_slider_item"><img src="images/slide_5.png" alt="" class="clients_slider_img"></div>
+      </div>
+    </div>
+  </section>
+  <section class="contacts">
+    <div class="container">
+      <h3 class="contacts_title title">
+        Наше производство
+      </h3>
+      <div class="contacts_inner">
+        <div class="contacts_info">
+          <div class="contacts_items">
+            <div class="contacts_item">
+              <h4 class="contacts_info_title">г. Казань, ул. Волгоградская, д.12</h4>
+              <div class="contacts_info_block">
+                <div class="contacts_info_phones">
+                  <div class="contacts_phone_item">
+                    <div class="contacts_phone">
+                      8 (967) 371-19-99
+                    </div>
+                    <div class="contacts_phone_text">Whatsapp</div>
+                  </div>
+                  <div class="contacts_phone_item">
+                    <div class="contacts_phone">8 (962) 576-76-10</div>
+                    <div class="contacts_phone_text">Viber</div>
+                  </div>
+                  <div class="contacts_phone_item">
+                    <div class="contacts_phone">8 800 211-19-99</div>
+                    <div class="contacts_phone_text">Россия</div>
+                  </div>
+                </div>
+                <div class="contacts_info_time">
+                  с 9:00-21:00 (без выходных)
+                  <span class="contacts_time_text">График работы</span>
+                </div>
+                <div class="contacts_map_show">
+                  <a class="contacts_map_link" href="#">Показать на карте</a>
+                </div>
+              </div>
+            </div>
+            <div class="contacts_item">
+              <h4 class="contacts_info_title">г. Казань, ул. Юлиуса Фучика, д.14</h4>
+              <div class="contacts_info_block">
+                <div class="contacts_info_phones">
+                  <div class="contacts_phone_item">
+                    <div class="contacts_phone">
+                      8 (967) 371-19-99
+                    </div>
+                    <div class="contacts_phone_text">Whatsapp</div>
+                  </div>
+                  <div class="contacts_phone_item">
+                    <div class="contacts_phone">8 (962) 576-76-10</div>
+                    <div class="contacts_phone_text">Viber</div>
+                  </div>
+                  <div class="contacts_phone_item">
+                    <div class="contacts_phone">8 800 211-19-99</div>
+                    <div class="contacts_phone_text">Россия</div>
+                  </div>
+                </div>
+                <div class="contacts_info_time">
+                  с 9:00-21:00 (без выходных)
+                  <span class="contacts_time_text">График работы</span>
+                </div>
+                <div class="contacts_map_show">
+                  <a class="contacts_map_link" href="#">Показать на карте</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button class="contacts_info_btn button">контакты</button>
+        </div>
+        <div class="contacts_map">
+          <script type="text/javascript" charset="utf-8" async
+            src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A5eba18bfae5a218e8221e9bea5d94ba2460e11c0d658e1f2cb805f3d37e96a73&amp;width=635&amp;height=561&amp;lang=ru_RU&amp;scroll=true">
+          </script>
+        </div>
+      </div>
+  </section>
+  <section class="questions">
+    <div class="container">
+      <h3 class="questions_title title">
+        У вас есть вопросы? Напишите нам.
+      </h3>
+      <form action="">
+        <div class="questions_form">
+          <div class="questions_form_group">
+            <div class="questions_form_inputs">
+              <input type="text" class="questions_form_input" placeholder="Фамилия Имя Отчество">
+              <input type="email" class="questions_form_input" placeholder="E-mail">
+              <input type="phone" class="questions_form_input" placeholder="Телефон">
+            </div>
+            <div class="questions_form_textareas">
+              <textarea class="questions_form_textarea" placeholder="Напишите ваш вопрос"></textarea>
+            </div>
+          </div>
+          <div class="questions_form_checkboxes">
+            <input class="questions_form_checkbox" type="checkbox" name="name" id="questions_form_checkbox">
+            <label for="questions_form_checkbox" class="questions_form_checkbox_label">Согласен на <a
+                href="#"><span>обработку
+                  персональных данных</span> </a></label>
+          </div>
+          <div>
+            <button class="questions_form_btn button" type="submit">отправить вопрос</button>
+          </div>
+
+        </div>
+      </form>
+    </div>
+    </div>
+  </section>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer_top">
+        <div class="footer_contacts">
+          <div class="footer_logo logo">
+            <img src="images/logo.svg" alt="">
+          </div>
+          <div class="footer_phones">
+            <div class="footer_phone">
+              <a class="footer_phone_link" href="tel:88002111999">8 800 211-19-99</a>
+              <div class="footer_phone_text">Россия</div>
+            </div>
+            <div class="footer_phone">
+              <a class="footer_phone_link" href="tel:89673711999">8 (967) 371-19-99</a>
+              <div class="footer_phone_text">Whatsapp</div>
+            </div>
+            <div class="footer_phone">
+              <a class="footer_phone_link" href="tel:89625767610">8 (962) 576-76-10</a>
+              <div class="footer_phone_text">Viber</div>
+            </div>
+          </div>
+          <div class="footer_email">
+            <a class="footer_email_link" href="mailto:info@medar.ru">info@medar.ru</a>
+            <div class="footer_email_text">E-mail</div>
+          </div>
+        </div>
+        <div class="footer_stylists">
+          <h4 class="footer_title">
+            Для стилистов
+          </h4>
+          <ul class="footer_list">
+            <li class="footer_top_item"><a class="footer_top_link" href="#">Сыворотки (329)</a></li>
+            <li class="footer_top_item"><a class="footer_top_link" href="#">Гели (39)</a></li>
+            <li class="footer_top_item"><a class="footer_top_link" href="#">Смеси (66)</a></li>
+            <li class="footer_top_item"><a class="footer_top_link" href="#">Перчатки (9)</a></li>
+            <li class="footer_top_item"><a class="footer_top_link" href="#">Мус (520)</a></li>
+          </ul>
+          <div class="footer_categories footer_categories_active">
+            Все категории
+          </div>
+        </div>
+        <div class="footer_cosmetology">
+          <h4 class="footer_title">
+            Для косметологии
+          </h4>
+          <ul class="footer_list">
+            <li class="footer_top_item"><a class="footer_top_link" href="#">Сыворотки (329)</a></li>
+            <li class="footer_top_item"><a class="footer_top_link" href="#">Гели (39)</a></li>
+            <li class="footer_top_item"><a class="footer_top_link" href="#">Смеси (66)</a></li>
+            <li class="footer_top_item"><a class="footer_top_link" href="#">Перчатки (9)</a></li>
+            <li class="footer_top_item"><a class="footer_top_link" href="#">Мус (520)</a></li>
+            <li class="footer_top_item"><a class="footer_top_link" href="#">Ножницы (39)</a></li>
+            <li class="footer_top_item"><a class="footer_top_link" href="#">Сыворотки (66)</a></li>
+            <li class="footer_top_item"><a class="footer_top_link" href="#">Краска (9)</a></li>
+            <li class="footer_top_item"><a class="footer_top_link" href="#">Смеси (520)</a></li>
+          </ul>
+          <div class="footer_categories">
+            Все категории
+          </div>
+        </div>
+        <div class="footer_medical">
+          <h4 class="footer_title">
+            Для медицинских<br>
+            центров
+          </h4>
+          <ul class="footer_list">
+            <li class="footer_top_item"><a class="footer_top_link" href="#">Сыворотки (329)</a></li>
+            <li class="footer_top_item"><a class="footer_top_link" href="#">Гели (39)</a></li>
+            <li class="footer_top_item"><a class="footer_top_link" href="#">Смеси (66)</a></li>
+            <li class="footer_top_item"><a class="footer_top_link" href="#">Перчатки (9)</a></li>
+            <li class="footer_top_item"><a class="footer_top_link" href="#">Мус (520)</a></li>
+            <li class="footer_top_item"><a class="footer_top_link" href="#">Ножницы (39)</a></li>
+            <li class="footer_top_item"><a class="footer_top_link" href="#">Сыворотки (66)</a></li>
+            <li class="footer_top_item"><a class="footer_top_link" href="#">Краска (9)</a></li>
+            <li class="footer_top_item"><a class="footer_top_link" href="#">Смеси (520)</a></li>
+          </ul>
+          <div class="footer_categories">
+            Все категории
+          </div>
+        </div>
+        <div class="footer_last-part">
+          <div class="footer_nail">
+            <h4 class="footer_title">
+              Для nail-индустрии
+            </h4>
+            <ul class="footer_list">
+              <li class="footer_top_item"><a class="footer_top_link" href="#">Сыворотки (329)</a></li>
+              <li class="footer_top_item"><a class="footer_top_link" href="#">Гели (39)</a></li>
+              <li class="footer_top_item"><a class="footer_top_link" href="#">Смеси (66)</a></li>
+            </ul>
+            <div class="footer_categories">
+              Все категории
+            </div>
+          </div>
+          <div class="footer_menu">
+            <h4 class="footer_title">
+              О компании
+            </h4>
+            <ul class="footer_list">
+              <li class="footer_top_item"><a class="footer_top_link" href="#">Доставка и оплата</a></li>
+              <li class="footer_top_item"><a class="footer_top_link" href="#">Гарантия и возврат</a></li>
+              <li class="footer_top_item"><a class="footer_top_link" href="#">Сотрудничество</a></li>
+              <li class="footer_top_item"><a class="footer_top_link" href="#">Контакты</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer_social">
+        <button class="footer_btn button">заказать звонок</button>
+        <ul class="footer_social_list">
+          <li class="footer_social_item"><a class="footer_social_link" href="#"><img src="images/vk.svg" alt=""></a>
+          </li>
+          <li class="footer_social_item"><a class="footer_social_link" href="#"><img src="images/fb.svg" alt=""></a>
+          </li>
+          <li class="footer_social_item"><a class="footer_social_link" href="#"><img src="images/instagram.svg"
+                alt=""></a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+  <div class="footer_bottom">
+    <div class="container">
+      <div class="footer_bottom_inner">
+        <div class="footer_copy">
+          © Medar Beauty 2013-2019
+        </div>
+        <div class="devops">
+          <a class="devops_link" href="#">Разработка сайта - <img class="devops_logo" src="images/artrockets.svg"
+              alt=""></a>
+        </div>
+      </div>
+    </div>
+  </div> -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="js/libs.min.js"></script>
+  <script src="js/jquery.formstyler.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
