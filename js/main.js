@@ -22,20 +22,41 @@ $(function () {
     });
 
 
-    const selectElement = document.querySelector('[data-shops-select]');
-    const selectReal = document.querySelector('.header_top_select');
-    console.log('selectReal: ', selectReal);
-    selectElement.addEventListener('click', function (event) {
-        if (event.target.hasAttribute('data-shops-item')) {
-            const itemTitle = event.target.getAttribute('data-shops-item');
-            event.target.closest('[data-shops-select]').querySelector('[data-shops-title]').textContent = itemTitle;
-            event.target.closest('[data-shops-select]').querySelector('.shops_dropdown').classList.toggle('hidden');
-            selectReal.value = itemTitle;
+    // const selectElement = document.querySelector('[data-shops-select]');
+    // const selectReal = document.querySelector('.header_top_select');
+    // console.log('selectReal: ', selectReal);
+    // selectElement.addEventListener('click', function (event) {
+    //     if (event.target.hasAttribute('data-shops-item')) {
+    //         const itemTitle = event.target.getAttribute('data-shops-item');
+    //         event.target.closest('[data-shops-select]').querySelector('[data-shops-title]').textContent = itemTitle;
+    //         event.target.closest('[data-shops-select]').querySelector('.shops_dropdown').classList.toggle('hidden');
+    //         selectReal.value = itemTitle;
+    //     } else {
+    //         this.querySelector('.shops_dropdown').classList.toggle('hidden');
+    //     }
+    // });
+
+    // $('.select_cities').styler();
+
+    const createItems = document.querySelector('.create_items');
+    const createItem = document.querySelectorAll('.create_item');
+    document.querySelector('body').addEventListener('click', (e) => {
+        if (!e.target.closest('.create_item')) {
+            const idCreate = document.querySelectorAll('.create_item');
+            for (let y = 0; y < idCreate.length; y++) {
+                createItem[y].childNodes[1].childNodes[1].style.backgroundColor = "#F3F3F3";
+                createItem[y].childNodes[1].childNodes[3].style.backgroundColor = "#F3F3F3";
+                createItem[y].childNodes[1].childNodes[1].style.color = "#535353";
+                createItem[y].childNodes[3].style.color = "#AAAAAA";
+            }
         } else {
-            this.querySelector('.shops_dropdown').classList.toggle('hidden');
+            const idCreate = e.target.closest('.create_item').id;
+            for (let y = 0; y < idCreate; y++) {
+                createItem[y].childNodes[1].childNodes[1].style.backgroundColor = "#57C3AE";
+                createItem[y].childNodes[1].childNodes[3].style.backgroundColor = "#57C3AE";
+                createItem[y].childNodes[1].childNodes[1].style.color = "#fff";
+                createItem[y].childNodes[3].style.color = "#535353";
+            }
         }
     });
-
-    $('.select_cities').styler();
-
 });
